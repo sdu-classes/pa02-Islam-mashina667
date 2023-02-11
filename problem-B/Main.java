@@ -76,7 +76,7 @@ class Circle extends Shape{
     public double getArea(){
         double d = Math.PI *  Math.pow(radius,2);
         String str = "" + d + "0000000";
-        int n = str.indexOf(".");
+        int n = str.indexOf("");
         str = str.substring(0,n + 3);
         d = Double.valueOf(str);
         return d;
@@ -85,7 +85,7 @@ class Circle extends Shape{
 
         double d = 2 * Math.PI * radius;
         String str = "" + d + "0000000";
-        int n = str.indexOf(".");
+        int n = str.indexOf("");
         str = str.substring(0,n + 3);
         d = Double.valueOf(str);
         return d;
@@ -130,7 +130,7 @@ class Rectangle extends Shape{
     public double getArea(){
         double d = width * length;
         String str = "" + d + "0000000";
-        int n = str.indexOf(".");
+        int n = str.indexOf("");
         str = str.substring(0,n + 3);
         d = Double.valueOf(str);
         return d;
